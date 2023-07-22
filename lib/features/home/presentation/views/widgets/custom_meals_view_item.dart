@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:meals_app/core/utils/styles.dart';
 import 'package:meals_app/features/home/data/model/meal_model.dart';
 
+import '../../../../../constance.dart';
+
 class CustomMealsListViewItem extends StatelessWidget {
   const CustomMealsListViewItem({
     super.key,
@@ -22,13 +24,13 @@ class CustomMealsListViewItem extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(16.0),
             boxShadow: [
-          BoxShadow(
-            offset: const Offset(0, 3),
-            color: Colors.grey[200]!,
-            spreadRadius: 5,
-            blurRadius: 5,
-          )
-        ]),
+              BoxShadow(
+                offset: const Offset(0, 3),
+                color: Colors.grey[200]!,
+                spreadRadius: 5,
+                blurRadius: 5,
+              )
+            ]),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -61,9 +63,11 @@ class CustomMealsListViewItem extends StatelessWidget {
                       height: 15.0,
                     ),
                     Text(
-                      '💚 ${mealModel.results![index].rating!}',
-                      style: Styles.textStyle18
-                          .copyWith(color: Colors.grey, fontFamily: ''),
+                      '💚 ${mealModel.results![index].rating!} likes',
+                      style: Styles.textStyle18.copyWith(
+                        color: Colors.grey,
+                        fontFamily: kNotoSerif,
+                      ),
                     ),
                   ],
                 ),

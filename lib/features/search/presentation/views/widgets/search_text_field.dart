@@ -4,7 +4,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import 'package:meals_app/constance.dart';
 import 'package:meals_app/features/search/presentation/controller/search_cubit.dart';
-
 import '../../../../../core/utils/styles.dart';
 
 class SearchTextFormField extends StatelessWidget {

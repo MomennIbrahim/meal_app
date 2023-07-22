@@ -1,15 +1,10 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-import 'package:meals_app/core/utils/app_router.dart';
 import 'package:meals_app/core/widgets/custom_widget_error.dart';
 import 'package:meals_app/core/widgets/custom_widget_loading.dart';
 import 'package:meals_app/features/home/presentation/views/meal_details_view.dart';
 import 'package:meals_app/features/search/presentation/controller/search_cubit.dart';
 import 'package:meals_app/features/search/presentation/views/widgets/search_item.dart';
-
-import '../../../../../core/utils/styles.dart';
 
 class ListViewSearch extends StatelessWidget {
   const ListViewSearch({super.key});
